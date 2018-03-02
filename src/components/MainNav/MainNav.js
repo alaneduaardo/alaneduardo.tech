@@ -26,7 +26,6 @@ const MainNav = () => {
         </NavItem>
       </Nav>
       <hr />
-      <p>Link based</p>
       <Nav vertical>
         <NavLink href="#">Link</NavLink>
         <NavLink href="#">Link</NavLink>
