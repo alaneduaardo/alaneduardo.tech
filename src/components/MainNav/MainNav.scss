@@ -5,12 +5,11 @@
   padding: 15px;
   background: $gray-800;
 
-  .nav-link {
+  .nav-link:not([disabled]) {
     color: $white;
-    text-transform: capitalize;
   }
 
-  .nav-link:hover {
+  .nav-link:not([disabled]):hover {
     color: $gray-500;
   }
 }
