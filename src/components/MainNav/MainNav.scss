@@ -2,7 +2,7 @@
 
 .MainNav {
   min-height: 100%;
-  padding: 0 15px;
+  padding: 15px;
   background: $gray-800;
 
   .nav-link {
@@ -12,12 +12,5 @@
 
   .nav-link:hover {
     color: $gray-500;
-  }
-
-  .title {
-    font: $font-family-logo;
-    text-align: center;
-    line-height: 30px;
-    color: white;
   }
 }
