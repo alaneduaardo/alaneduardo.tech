@@ -1,0 +1,23 @@
+@import '../../assets/css/variables.scss';
+
+.MainNav {
+  min-height: 100%;
+  padding: 0 15px;
+  background: $gray-800;
+
+  .nav-link {
+    color: $white;
+    text-transform: capitalize;
+  }
+
+  .nav-link:hover {
+    color: $gray-500;
+  }
+
+  .title {
+    font: $font-family-logo;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
+}
