@@ -9,6 +9,10 @@
     color: $white;
   }
 
+  .nav-link[disabled] {
+    cursor: default;
+  }
+
   .nav-link:not([disabled]):hover {
     color: $gray-500;
   }
