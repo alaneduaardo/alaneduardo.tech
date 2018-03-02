@@ -81,3 +81,6 @@ yarn-error.log*
 
 # CSS processed files
 src/*.css
+
+# Dist folder
+/dist
