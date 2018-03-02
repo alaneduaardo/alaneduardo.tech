@@ -3,11 +3,11 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 
 import './MainContent.scss';
 
-const MainContent = ({ props }) => {
+const MainContent = ( props ) => {
   return (
     <section className="MainContent">
       <header>
-        <h1>{ props.title }</h1>
+        { props.title !== '' && props.title !== null ? ( <h1>{ props.title }</h1> ) : ''}
       </header>
       <article>
         { props.children }
@@ -16,4 +16,4 @@ const MainContent = ({ props }) => {
   );
 }
 
-export default Logo;
+export default MainContent;
