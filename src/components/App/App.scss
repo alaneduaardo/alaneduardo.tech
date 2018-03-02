@@ -2,56 +2,13 @@
 
 .App {
   height: 100%;
-  min-height: 100%;
-
-  .row {
+  
+  >.row {
     height: 100%;
-    min-height: 100%;
 
-    .main-nav {
-      min-height: 100%;
-      background: $gray-800;
-
-      .nav-link {
-        color: white;
-        text-transform: capitalize;
-      }
-
-      .nav-link:hover {
-        color: $gray-500;
-      }
-
-      .title {
-        font: $font-family-logo;
-        text-align: center;
-        line-height: 30px;
-        color: white;
-      }
+    >div {
+      padding: 0 !important;
+      height: 100%;
     }
   }
-
-  .App-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
-
-    .App-title {
-      font-size: 1.5em;
-    }
-
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-      height: 80px;
-    }
-  }
-
-  .App-intro {
-    font-size: large;
-  }
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
