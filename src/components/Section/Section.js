@@ -1,14 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 
 import './Section.scss';
 
-const Section = (props) => {
-  return (
-    <section className="Section">
-      { props.children }
-    </section>
-  );
-}
+export default class Section extends Component {
+  renderHeader(title) {
+    return title !== null && title !== '' ? (
+      <header>
+        <h4>{title}</h4>
+      </header>
+    ) : '';
+  }
 
-export default Section;
+  renderImage(img, imgSide) {
+    return img !== null && img !== '' && typeof img !== 'undefined' ? (
+      <figure className={imgSide}>
+        <img src={img} />
+      </figure>
+    ) : '';
+  }
+
+  render() {
+    let { title, img, imgSide, children } = this.props;
+
+    return (
+      <section className="Section">
+        { this.renderHeader(title) }
+        { this.renderImage(img, imgSide) }
+        { children }
+      </section>
+    );
+  }
+}
