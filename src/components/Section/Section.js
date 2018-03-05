@@ -11,21 +11,21 @@ export default class Section extends Component {
     ) : '';
   }
 
-  renderImage(img, imgSide) {
+  renderImage(img, side) {
     return img !== null && img !== '' && typeof img !== 'undefined' ? (
-      <figure className={imgSide}>
+      <figure className={side}>
         <img src={img} />
       </figure>
     ) : '';
   }
 
   render() {
-    let { title, img, imgSide, children } = this.props;
+    let { title, img, side, children } = this.props;
 
     return (
       <section className="Section">
         { this.renderHeader(title) }
-        { this.renderImage(img, imgSide) }
+        { this.renderImage(img, side) }
         { children }
       </section>
     );
