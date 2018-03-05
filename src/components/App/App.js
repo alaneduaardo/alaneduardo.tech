@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
+import Logo from '../Logo/Logo';
 import MainNav from '../MainNav/MainNav';
 import MainContent from '../MainContent/MainContent';
 import Section from '../Section/Section';
@@ -13,11 +14,11 @@ class App extends Component {
       <Container className="App">
         <Row>
           <Col md="3">
-            <MainNav />
+            <MainNav logo={<Logo />} />
           </Col>
           <Col md="9">
             <MainContent title="Vamos conhecer um pouco sobre mim?">
-              <Section title="Bio" img="http://noahsdad.com/wp-content/uploads/2011/05/down-syndrome-baby-boy-new-born-2.jpg" imgSide="right">
+              <Section title="Bio" img="http://noahsdad.com/wp-content/uploads/2011/05/down-syndrome-baby-boy-new-born-2.jpg" side="right">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis efficitur massa, et ornare arcu. Donec facilisis ullamcorper felis, at ullamcorper dolor pellentesque eget. Etiam molestie viverra magna sit amet rhoncus. Sed ut libero tortor. Quisque nisi purus, euismod ac porttitor nec, tempor eget turpis. Sed nec est sapien. Duis consectetur augue eu nisl tristique scelerisque. Donec ut dui in urna tincidunt imperdiet eu id diam. Curabitur in nisl nisi. Nunc neque orci, ultricies a consequat id, ornare sit amet lorem. Duis bibendum libero vitae ipsum lacinia efficitur.
                 </p>
@@ -29,7 +30,7 @@ class App extends Component {
                 </p>
               </Section>
 
-              <Section title="Family" img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0TEGOlwAHKqE2G9wwajjY9XcB57IRiEi2XwPaajzXJJlqchca" imgSide="left">
+              <Section title="Family" img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0TEGOlwAHKqE2G9wwajjY9XcB57IRiEi2XwPaajzXJJlqchca" side="left">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis efficitur massa, et ornare arcu. Donec facilisis ullamcorper felis, at ullamcorper dolor pellentesque eget. Etiam molestie viverra magna sit amet rhoncus. Sed ut libero tortor. Quisque nisi purus, euismod ac porttitor nec, tempor eget turpis. Sed nec est sapien. Duis consectetur augue eu nisl tristique scelerisque. Donec ut dui in urna tincidunt imperdiet eu id diam. Curabitur in nisl nisi. Nunc neque orci, ultricies a consequat id, ornare sit amet lorem. Duis bibendum libero vitae ipsum lacinia efficitur.
                 </p>
