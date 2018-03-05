@@ -1,13 +1,12 @@
 import React from 'react';
 import { Nav, NavItem, NavLink } from 'reactstrap';
 
-import Logo from '../Logo/Logo';
 import './MainNav.scss';
 
-const MainNav = () => {
+const MainNav = ( props ) => {
   return (
     <div className="MainNav">
-      <Logo />
+      { props.logo }
       <Nav vertical>
         <NavItem>
           <NavLink href="#">Personal</NavLink>
