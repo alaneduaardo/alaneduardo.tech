@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import Logo from '../Logo/Logo';
-import MainNav from '../MainNav/MainNav';
-import MainContent from '../MainContent/MainContent';
-import Section from '../Section/Section';
-import ImageCard from '../ImageCard/ImageCard';
+import { Logo, MainNav, MainContent, Section, ImageCard } from '../';
 
 import './App.scss';
 
