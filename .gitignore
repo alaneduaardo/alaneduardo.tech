@@ -84,3 +84,6 @@ src/*.css
 
 # Dist folder
 /dist
+
+# Package Lock
+package-lock.json
