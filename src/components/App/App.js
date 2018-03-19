@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import { Logo, MainNav, MainContent, Section, ImageCard } from '../';
+import { Logo, MainNav, MainContent, Section, ImageCard, Map } from '../';
 
 import './App.scss';
 
@@ -58,6 +58,8 @@ class App extends Component {
                   )
                 })}
               </Section>
+
+              <Map lat={-30.0346471} lon={-51.2176584} />
             </MainContent>
           </Col>
         </Row>
